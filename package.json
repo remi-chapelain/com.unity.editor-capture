@@ -5,9 +5,9 @@
   "description": "This package lets you grab capture from the gameview and simply circle through them for comparison",
   "unity": "2022.2",
   "unityRelease": "0a1",
-  "documentationUrl": "https://internet.com/",
-  "changelogUrl": "https://example.com/changelog.html",
-  "licensesUrl": "https://example.com/licensing.html",
+  "documentationUrl": "https://github.com/remi-chapelain/com.unity.editor-capture/blob/main/Documentation~/com.unity.editor-capture.md",
+  "changelogUrl": "https://github.com/remi-chapelain/com.unity.editor-capture/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/remi-chapelain/com.unity.editor-capture/blob/main/LICENSE.md",
 "keywords": [
     "capture",
     "screenshot"

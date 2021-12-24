@@ -335,12 +335,12 @@ public class EditorCapture : EditorWindow
 					switch(e.keyCode)
 					{
 						case KeyCode.RightArrow:
-						case KeyCode.D:
+						case KeyCode.K:
 							incrementTextureIndex();
 							Repaint();
 							break;
 						case KeyCode.LeftArrow:
-						case KeyCode.Q:
+						case KeyCode.J:
 							decrementTextureIndex();
 							Repaint();
 							break;

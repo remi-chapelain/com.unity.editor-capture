@@ -1,0 +1,19 @@
+{
+  "name": "com.unity.editor-capture",
+  "version": "1.0.0",
+  "displayName": "Editor Capture",
+  "description": "This package lets you grab capture from the gameview and simply circle through them for comparison",
+  "unity": "2022.2",
+  "unityRelease": "0a1",
+  "documentationUrl": "https://internet.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+"keywords": [
+    "capture",
+    "screenshot"
+  ],
+  "author": {
+    "name": "Rémi CHAPELAIN",
+    "email": "remi.chapelain@unity3d.com"
+  }
+}

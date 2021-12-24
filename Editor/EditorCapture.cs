@@ -82,13 +82,16 @@ public class EditorCapture : EditorWindow
     static void Init()
     {
         // Get existing open window or if none, make a new one:
+        // EditorCapture window = (EditorCapture)EditorWindow.GetWindowWithRect(typeof(EditorCapture), new Rect(0, 0, 1280f/EditorGUIUtility.pixelsPerPoint, 720f/EditorGUIUtility.pixelsPerPoint));
         EditorCapture window = (EditorCapture)EditorWindow.GetWindow(typeof(EditorCapture));
+		window.minSize = new Vector2(1280f/EditorGUIUtility.pixelsPerPoint, 720f/EditorGUIUtility.pixelsPerPoint);
         window.Show();
 		
     }
 
 	void OnGUI()
     {
+		// Debug.Log(Screen.width+" "+Screen.height);
 		Event e = Event.current;
 		manageEvents(Event.current);
 		
@@ -98,9 +101,9 @@ public class EditorCapture : EditorWindow
 		
 		GUILayout.BeginArea(new Rect(left + 2*margin,margin, Screen.width/EditorGUIUtility.pixelsPerPoint - (left+3*margin),headerHeight));
 			displayRatio = EditorGUILayout.Slider("Ratio", displayRatio, 0, 5, GUILayout.Width(410));
-			showText = EditorGUILayout.Toggle("Show Text", showText);
-			textSize = EditorGUILayout.IntField("Text Size", Mathf.Clamp(textSize,0,200), GUILayout.Width(300));
-			textColor = EditorGUILayout.ColorField("Text Color", textColor, GUILayout.Width(300));
+			showText = EditorGUILayout.Toggle("Show Capture Name", showText);
+			textSize = EditorGUILayout.IntField("Capture Name Size", Mathf.Clamp(textSize,0,200), GUILayout.Width(300));
+			textColor = EditorGUILayout.ColorField("Capture Name Color", textColor, GUILayout.Width(300));
 		GUILayout.EndArea();
 		
         GUILayout.BeginArea(new Rect(margin,margin,left,Screen.height/EditorGUIUtility.pixelsPerPoint-2*margin));

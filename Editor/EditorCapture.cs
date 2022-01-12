@@ -5,9 +5,6 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 using System;
-#if ENABLE_INPUT_SYSTEM
-using UnityEngine.InputSystem;
-#endif
 
 #if UNITY_EDITOR
 
